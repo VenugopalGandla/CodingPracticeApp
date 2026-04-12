@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Quest Club</title>
+    <meta
+      name="description"
+      content="A kid-friendly coding journey for a 3rd grader to build games and helpful real-life tools."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <nav class="topbar">
+          <div class="brand">
+            <span class="brand-badge">CQ</span>
+            <span class="brand-name">Code Quest Club</span>
+          </div>
+          <a class="nav-link" href="#phases">Explore the Adventure</a>
+        </nav>
+
+        <div class="hero-grid">
+          <section class="hero-copy">
+            <p class="eyebrow">Build games. Make tools. Think like a creator.</p>
+            <h1>Learn coding by making fun things that actually help in real life.</h1>
+            <p class="hero-text">
+              This is a playful, school-year coding path for a 3rd grader. Start
+              with Scratch, grow into simple typed code, and finish with projects
+              you can proudly show to family and friends.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="#phases">Start the journey</a>
+              <a class="button button-secondary" href="#portfolio">See the mission board</a>
+            </div>
+
+            <ul class="hero-stats" aria-label="Program facts">
+              <li><strong>32 weeks</strong><span>gentle and steady</span></li>
+              <li><strong>2 sessions</strong><span>each week</span></li>
+              <li><strong>4 phases</strong><span>with showcase moments</span></li>
+            </ul>
+          </section>
+
+          <section class="hero-card" aria-label="Highlights">
+            <div class="floating star">⭐</div>
+            <div class="floating spark">✨</div>
+            <div class="floating rocket">🚀</div>
+            <h2>Your coding superpowers</h2>
+            <div class="skill-list">
+              <article>
+                <h3>Game Maker</h3>
+                <p>Create mazes, clicker games, pet simulators, and adventure projects.</p>
+              </article>
+              <article>
+                <h3>Tool Builder</h3>
+                <p>Make helpers for routines, chores, studying, feelings, and family life.</p>
+              </article>
+              <article>
+                <h3>Bug Hunter</h3>
+                <p>Practice spotting what changed, what works, and what to try next.</p>
+              </article>
+            </div>
+          </section>
+        </div>
+      </header>
+
+      <main>
+        <section class="panel mission-panel" id="journey">
+          <div class="section-heading">
+            <p class="section-kicker">The Big Goal</p>
+            <h2>By the end of the year, you will be able to...</h2>
+          </div>
+          <div class="mission-grid">
+            <article class="mission-card">
+              <span class="mission-icon">🧠</span>
+              <h3>Think in steps</h3>
+              <p>Use sequence, repeat, choice, events, and memory boxes.</p>
+            </article>
+            <article class="mission-card">
+              <span class="mission-icon">🎮</span>
+              <h3>Build games</h3>
+              <p>Create at least 4 small games that are fun to play and easy to share.</p>
+            </article>
+            <article class="mission-card">
+              <span class="mission-icon">🛠️</span>
+              <h3>Make tools</h3>
+              <p>Build at least 4 helpful mini-projects for real life at home or school.</p>
+            </article>
+            <article class="mission-card">
+              <span class="mission-icon">🌟</span>
+              <h3>Create your own idea</h3>
+              <p>Finish a mostly original final project and explain how it works.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel" id="phases">
+          <div class="section-heading">
+            <p class="section-kicker">Adventure Map</p>
+            <h2>Travel through 4 coding worlds</h2>
+            <p>Each phase lasts about 8 weeks and ends with a showcase project.</p>
+          </div>
+          <div class="phase-grid" id="phase-grid"></div>
+        </section>
+
+        <section class="panel rhythm-panel" id="rhythm">
+          <div class="section-heading">
+            <p class="section-kicker">Weekly Rhythm</p>
+            <h2>Small sessions. Big progress.</h2>
+          </div>
+          <div class="rhythm-grid">
+            <article class="rhythm-card">
+              <h3>Session A</h3>
+              <ul>
+                <li>Warm-up: remember what you built last time</li>
+                <li>Learn one fresh idea</li>
+                <li>Build or remix a mini-project</li>
+                <li>Explain one thing your code does</li>
+              </ul>
+            </article>
+            <article class="rhythm-card">
+              <h3>Session B</h3>
+              <ul>
+                <li>Predict what will happen before you run it</li>
+                <li>Add one challenge or new rule</li>
+                <li>Turn it into a game or a useful helper</li>
+                <li>Test and share what to improve next</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel projects-panel" id="projects">
+          <div class="section-heading">
+            <p class="section-kicker">Project Ideas</p>
+            <h2>Pick something playful or useful</h2>
+          </div>
+          <div class="tab-row" role="tablist" aria-label="Project categories">
+            <button class="tab-button is-active" data-tab="games" role="tab" aria-selected="true">
+              Games
+            </button>
+            <button class="tab-button" data-tab="tools" role="tab" aria-selected="false">
+              Helpful Tools
+            </button>
+          </div>
+          <div class="project-list" id="project-list"></div>
+        </section>
+
+        <section class="panel vocabulary-panel" id="words">
+          <div class="section-heading">
+            <p class="section-kicker">Kid-Friendly Words</p>
+            <h2>Friendly language first</h2>
+          </div>
+          <div class="vocabulary-grid">
+            <article><h3>Sequence</h3><p>Steps in order</p></article>
+            <article><h3>Event</h3><p>A start signal</p></article>
+            <article><h3>Loop</h3><p>Repeat</p></article>
+            <article><h3>Conditional</h3><p>A choice</p></article>
+            <article><h3>Variable</h3><p>A memory box</p></article>
+            <article><h3>Debugging</h3><p>Bug hunting</p></article>
+          </div>
+        </section>
+
+        <section class="panel adult-panel" id="adult">
+          <div class="section-heading">
+            <p class="section-kicker">For Grown-Ups</p>
+            <h2>How to help without taking over</h2>
+          </div>
+          <div class="adult-grid">
+            <article class="adult-card">
+              <h3>Helpful things to do</h3>
+              <ul>
+                <li>Open the website or project</li>
+                <li>Read tricky instructions aloud</li>
+                <li>Ask what the child wants the code to do</li>
+                <li>Encourage testing after small changes</li>
+              </ul>
+            </article>
+            <article class="adult-card">
+              <h3>Great coaching questions</h3>
+              <ul>
+                <li>What do you think will happen?</li>
+                <li>Which part starts the project?</li>
+                <li>What changed after you tested it?</li>
+                <li>What is one tiny thing to try next?</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="panel portfolio-panel" id="portfolio">
+          <div class="section-heading">
+            <p class="section-kicker">Mission Board</p>
+            <h2>Portfolio goals for the year</h2>
+          </div>
+          <div class="portfolio-grid">
+            <article class="portfolio-card">
+              <span>🎮</span>
+              <strong>4 games</strong>
+            </article>
+            <article class="portfolio-card">
+              <span>🧰</span>
+              <strong>4 useful tools</strong>
+            </article>
+            <article class="portfolio-card">
+              <span>🔁</span>
+              <strong>1 favorite remix</strong>
+            </article>
+            <article class="portfolio-card">
+              <span>🏁</span>
+              <strong>1 final original project</strong>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <template id="phase-card-template">
+      <article class="phase-card">
+        <div class="phase-top">
+          <span class="phase-number"></span>
+          <span class="phase-tool"></span>
+        </div>
+        <h3 class="phase-title"></h3>
+        <p class="phase-goal"></p>
+        <div class="pill-row concepts"></div>
+        <div class="phase-section">
+          <h4>Try these projects</h4>
+          <ul class="phase-projects"></ul>
+        </div>
+        <div class="phase-section">
+          <h4>Showcase idea</h4>
+          <p class="phase-showcase"></p>
+        </div>
+      </article>
+    </template>
+
+    <template id="project-card-template">
+      <article class="project-card">
+        <div class="project-icon"></div>
+        <div>
+          <h3 class="project-title"></h3>
+          <p class="project-description"></p>
+        </div>
+      </article>
+    </template>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
