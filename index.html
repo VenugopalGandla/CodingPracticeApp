@@ -6,7 +6,7 @@
     <title>Code Quest Club</title>
     <meta
       name="description"
-      content="A kid-friendly coding journey for a 3rd grader to build games and helpful real-life tools."
+      content="A gentle beginner coding website for a 3rd grader to learn programming concepts step by step."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,28 +24,33 @@
             <span class="brand-badge">CQ</span>
             <span class="brand-name">Code Quest Club</span>
           </div>
-          <a class="nav-link" href="#phases">Explore the Adventure</a>
+          <div class="top-links">
+            <a class="nav-link" href="#lessons">Start Lessons</a>
+            <a class="nav-link" href="#adult">For Grown-Ups</a>
+          </div>
         </nav>
 
         <div class="hero-grid">
           <section class="hero-copy">
-            <p class="eyebrow">Build games. Make tools. Think like a creator.</p>
-            <h1>Learn coding by making fun things that actually help in real life.</h1>
+            <p class="eyebrow">Tiny steps. Big confidence.</p>
+            <h1>Learn your very first coding ideas one playful lesson at a time.</h1>
             <p class="hero-text">
-              This is a playful, school-year coding path for a 3rd grader. Start
-              with Scratch, grow into simple typed code, and finish with projects
-              you can proudly show to family and friends.
+              This website is made for a 3rd grader who is just starting coding.
+              We begin with Scratch, use very little typing, and slowly build real
+              understanding through games, routines, and creative projects.
             </p>
 
             <div class="hero-actions">
-              <a class="button button-primary" href="#phases">Start the journey</a>
-              <a class="button button-secondary" href="#portfolio">See the mission board</a>
+              <a class="button button-primary" href="#lessons">Go to Week 1</a>
+              <a class="button button-secondary" href="https://scratch.mit.edu/" target="_blank" rel="noreferrer">
+                Open Scratch
+              </a>
             </div>
 
             <ul class="hero-stats" aria-label="Program facts">
-              <li><strong>32 weeks</strong><span>gentle and steady</span></li>
-              <li><strong>2 sessions</strong><span>each week</span></li>
-              <li><strong>4 phases</strong><span>with showcase moments</span></li>
+              <li><strong>8 starter weeks</strong><span>ready right now</span></li>
+              <li><strong>1 concept at a time</strong><span>for less overwhelm</span></li>
+              <li><strong>Saved progress</strong><span>right in this browser</span></li>
             </ul>
           </section>
 
@@ -53,19 +58,19 @@
             <div class="floating star">⭐</div>
             <div class="floating spark">✨</div>
             <div class="floating rocket">🚀</div>
-            <h2>Your coding superpowers</h2>
+            <h2>What kids will practice</h2>
             <div class="skill-list">
               <article>
-                <h3>Game Maker</h3>
-                <p>Create mazes, clicker games, pet simulators, and adventure projects.</p>
+                <h3>Follow steps</h3>
+                <p>Tell the computer what happens first, next, and last.</p>
               </article>
               <article>
-                <h3>Tool Builder</h3>
-                <p>Make helpers for routines, chores, studying, feelings, and family life.</p>
+                <h3>Use repeat</h3>
+                <p>Make code do the same thing again and again.</p>
               </article>
               <article>
-                <h3>Bug Hunter</h3>
-                <p>Practice spotting what changed, what works, and what to try next.</p>
+                <h3>Make choices</h3>
+                <p>Learn how code reacts when something different happens.</p>
               </article>
             </div>
           </section>
@@ -73,75 +78,147 @@
       </header>
 
       <main>
-        <section class="panel mission-panel" id="journey">
+        <section class="panel progress-panel" id="progress">
           <div class="section-heading">
-            <p class="section-kicker">The Big Goal</p>
-            <h2>By the end of the year, you will be able to...</h2>
+            <p class="section-kicker">Mission Progress</p>
+            <h2>Your learning path starts here</h2>
+            <p>Complete lessons one by one. You can always come back and keep going.</p>
+          </div>
+
+          <div class="progress-strip">
+            <div class="progress-copy">
+              <strong id="progress-summary">0 of 8 lessons finished</strong>
+              <span id="progress-detail">Start with Week 1: Meet Scratch.</span>
+            </div>
+            <div class="progress-track" aria-hidden="true">
+              <div class="progress-fill" id="progress-fill"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel lessons-panel" id="lessons">
+          <div class="section-heading">
+            <p class="section-kicker">Phase 1 Learning Path</p>
+            <h2>Beginner lessons for a 3rd grader</h2>
+            <p>These 8 weeks are designed to introduce programming concepts gradually.</p>
+          </div>
+
+          <div class="lesson-layout">
+            <aside class="lesson-sidebar">
+              <div class="sidebar-card">
+                <h3>Choose a week</h3>
+                <p>Pick the next lesson or replay one you liked.</p>
+                <div class="lesson-list" id="lesson-list"></div>
+              </div>
+            </aside>
+
+            <section class="lesson-view">
+              <article class="lesson-card">
+                <div class="lesson-header">
+                  <div>
+                    <p class="lesson-week" id="lesson-week">Week 1</p>
+                    <h3 class="lesson-title" id="lesson-title">Meet Scratch</h3>
+                  </div>
+                  <button class="complete-button" id="complete-button" type="button">
+                    Mark Lesson Complete
+                  </button>
+                </div>
+
+                <div class="lesson-focus">
+                  <span class="focus-badge" id="lesson-concept">Event</span>
+                  <span class="focus-badge soft" id="lesson-tool">Scratch</span>
+                </div>
+
+                <p class="lesson-goal" id="lesson-goal"></p>
+
+                <div class="lesson-grid">
+                  <section class="content-card">
+                    <h4>What you will learn</h4>
+                    <p id="lesson-learn"></p>
+                  </section>
+                  <section class="content-card">
+                    <h4>Kid words</h4>
+                    <p id="lesson-kid-words"></p>
+                  </section>
+                </div>
+
+                <section class="content-card">
+                  <h4>Try this project</h4>
+                  <p id="lesson-project"></p>
+                  <a
+                    class="button button-inline"
+                    id="lesson-link"
+                    href="https://scratch.mit.edu/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Open Scratch and Build
+                  </a>
+                </section>
+
+                <section class="content-card">
+                  <h4>Step-by-step mission</h4>
+                  <ol class="step-list" id="lesson-steps"></ol>
+                </section>
+
+                <div class="lesson-grid">
+                  <section class="content-card">
+                    <h4>Level-up challenge</h4>
+                    <p id="lesson-challenge"></p>
+                  </section>
+                  <section class="content-card">
+                    <h4>Show a grown-up</h4>
+                    <p id="lesson-share"></p>
+                  </section>
+                </div>
+
+                <section class="content-card">
+                  <h4>Bug-hunting question</h4>
+                  <p id="lesson-debug"></p>
+                </section>
+
+                <section class="content-card">
+                  <h4>Adult helper note</h4>
+                  <p id="lesson-adult-note"></p>
+                </section>
+              </article>
+            </section>
+          </div>
+        </section>
+
+        <section class="panel concepts-panel" id="concepts">
+          <div class="section-heading">
+            <p class="section-kicker">Big Ideas</p>
+            <h2>The first coding concepts we teach</h2>
           </div>
           <div class="mission-grid">
             <article class="mission-card">
+              <span class="mission-icon">1️⃣</span>
+              <h3>Sequence</h3>
+              <p>Put steps in order so the computer knows what to do first and next.</p>
+            </article>
+            <article class="mission-card">
+              <span class="mission-icon">🚦</span>
+              <h3>Events</h3>
+              <p>Start code when something happens, like a click or the green flag.</p>
+            </article>
+            <article class="mission-card">
+              <span class="mission-icon">🔁</span>
+              <h3>Repeat</h3>
+              <p>Use loops to do the same action many times without writing it again.</p>
+            </article>
+            <article class="mission-card">
               <span class="mission-icon">🧠</span>
-              <h3>Think in steps</h3>
-              <p>Use sequence, repeat, choice, events, and memory boxes.</p>
-            </article>
-            <article class="mission-card">
-              <span class="mission-icon">🎮</span>
-              <h3>Build games</h3>
-              <p>Create at least 4 small games that are fun to play and easy to share.</p>
-            </article>
-            <article class="mission-card">
-              <span class="mission-icon">🛠️</span>
-              <h3>Make tools</h3>
-              <p>Build at least 4 helpful mini-projects for real life at home or school.</p>
-            </article>
-            <article class="mission-card">
-              <span class="mission-icon">🌟</span>
-              <h3>Create your own idea</h3>
-              <p>Finish a mostly original final project and explain how it works.</p>
-            </article>
-          </div>
-        </section>
-
-        <section class="panel" id="phases">
-          <div class="section-heading">
-            <p class="section-kicker">Adventure Map</p>
-            <h2>Travel through 4 coding worlds</h2>
-            <p>Each phase lasts about 8 weeks and ends with a showcase project.</p>
-          </div>
-          <div class="phase-grid" id="phase-grid"></div>
-        </section>
-
-        <section class="panel rhythm-panel" id="rhythm">
-          <div class="section-heading">
-            <p class="section-kicker">Weekly Rhythm</p>
-            <h2>Small sessions. Big progress.</h2>
-          </div>
-          <div class="rhythm-grid">
-            <article class="rhythm-card">
-              <h3>Session A</h3>
-              <ul>
-                <li>Warm-up: remember what you built last time</li>
-                <li>Learn one fresh idea</li>
-                <li>Build or remix a mini-project</li>
-                <li>Explain one thing your code does</li>
-              </ul>
-            </article>
-            <article class="rhythm-card">
-              <h3>Session B</h3>
-              <ul>
-                <li>Predict what will happen before you run it</li>
-                <li>Add one challenge or new rule</li>
-                <li>Turn it into a game or a useful helper</li>
-                <li>Test and share what to improve next</li>
-              </ul>
+              <h3>Bug Hunting</h3>
+              <p>Notice what changed, test one thing, and keep going calmly.</p>
             </article>
           </div>
         </section>
 
         <section class="panel projects-panel" id="projects">
           <div class="section-heading">
-            <p class="section-kicker">Project Ideas</p>
-            <h2>Pick something playful or useful</h2>
+            <p class="section-kicker">What Kids Build</p>
+            <h2>Projects that feel fun and useful</h2>
           </div>
           <div class="tab-row" role="tablist" aria-label="Project categories">
             <button class="tab-button is-active" data-tab="games" role="tab" aria-selected="true">
@@ -156,8 +233,8 @@
 
         <section class="panel vocabulary-panel" id="words">
           <div class="section-heading">
-            <p class="section-kicker">Kid-Friendly Words</p>
-            <h2>Friendly language first</h2>
+            <p class="section-kicker">Friendly Words</p>
+            <h2>Kid-first language</h2>
           </div>
           <div class="vocabulary-grid">
             <article><h3>Sequence</h3><p>Steps in order</p></article>
@@ -172,75 +249,41 @@
         <section class="panel adult-panel" id="adult">
           <div class="section-heading">
             <p class="section-kicker">For Grown-Ups</p>
-            <h2>How to help without taking over</h2>
+            <h2>How to help a 3rd grader learn gradually</h2>
           </div>
           <div class="adult-grid">
             <article class="adult-card">
-              <h3>Helpful things to do</h3>
+              <h3>Keep it tiny</h3>
               <ul>
-                <li>Open the website or project</li>
-                <li>Read tricky instructions aloud</li>
-                <li>Ask what the child wants the code to do</li>
-                <li>Encourage testing after small changes</li>
+                <li>Do one lesson at a time</li>
+                <li>Let the child stop after one success</li>
+                <li>Repeat favorite projects with new themes</li>
+                <li>Do not rush into typing</li>
               </ul>
             </article>
             <article class="adult-card">
-              <h3>Great coaching questions</h3>
+              <h3>Ask helpful questions</h3>
               <ul>
                 <li>What do you think will happen?</li>
-                <li>Which part starts the project?</li>
+                <li>Which block starts the project?</li>
                 <li>What changed after you tested it?</li>
                 <li>What is one tiny thing to try next?</li>
               </ul>
             </article>
           </div>
         </section>
-
-        <section class="panel portfolio-panel" id="portfolio">
-          <div class="section-heading">
-            <p class="section-kicker">Mission Board</p>
-            <h2>Portfolio goals for the year</h2>
-          </div>
-          <div class="portfolio-grid">
-            <article class="portfolio-card">
-              <span>🎮</span>
-              <strong>4 games</strong>
-            </article>
-            <article class="portfolio-card">
-              <span>🧰</span>
-              <strong>4 useful tools</strong>
-            </article>
-            <article class="portfolio-card">
-              <span>🔁</span>
-              <strong>1 favorite remix</strong>
-            </article>
-            <article class="portfolio-card">
-              <span>🏁</span>
-              <strong>1 final original project</strong>
-            </article>
-          </div>
-        </section>
       </main>
     </div>
 
-    <template id="phase-card-template">
-      <article class="phase-card">
-        <div class="phase-top">
-          <span class="phase-number"></span>
-          <span class="phase-tool"></span>
-        </div>
-        <h3 class="phase-title"></h3>
-        <p class="phase-goal"></p>
-        <div class="pill-row concepts"></div>
-        <div class="phase-section">
-          <h4>Try these projects</h4>
-          <ul class="phase-projects"></ul>
-        </div>
-        <div class="phase-section">
-          <h4>Showcase idea</h4>
-          <p class="phase-showcase"></p>
-        </div>
-      </article>
+    <template id="lesson-item-template">
+      <button class="lesson-item" type="button">
+        <span class="lesson-item-top">
+          <span class="lesson-item-week"></span>
+          <span class="lesson-item-check" aria-hidden="true">○</span>
+        </span>
+        <strong class="lesson-item-title"></strong>
+        <span class="lesson-item-concept"></span>
+      </button>
     </template>
 
     <template id="project-card-template">
@@ -255,4 +298,4 @@
 
     <script src="script.js"></script>
   </body>
-  </html>
+</html>
