@@ -9,7 +9,25 @@ const lessons = [
     learn: "A project starts when an event happens. In Scratch, the green flag is one kind of event.",
     kidWords: "Event means a start signal. Sequence means steps in order.",
     project: "Make one character appear, move a little, and say hello.",
-    link: "https://scratch.mit.edu/",
+    link: "https://scratch.mit.edu/projects/editor/",
+    starterTip: "Build only these starter blocks first. Once they work, add your own fun changes.",
+    starterBlocks: [
+      "when green flag clicked",
+      "move 10 steps",
+      "say Hello! for 2 seconds"
+    ],
+    activity: {
+      title: "Pick the start block",
+      question: "Which block should go at the top if you want your project to start when the green flag is clicked?",
+      choices: [
+        "when green flag clicked",
+        "move 10 steps",
+        "say Hello!"
+      ],
+      answerIndex: 0,
+      success: "Yes. The green flag block is the start signal.",
+      retry: "Try again. Look for the block that tells Scratch when to begin."
+    },
     steps: [
       "Open Scratch and choose a sprite you like.",
       "Drag in a green flag block.",
@@ -33,7 +51,26 @@ const lessons = [
     learn: "Sequence means the computer follows steps from top to bottom.",
     kidWords: "Sequence means steps in order.",
     project: "Make a dance party where a character moves, turns, talks, and changes costume.",
-    link: "https://scratch.mit.edu/",
+    link: "https://scratch.mit.edu/projects/editor/",
+    starterTip: "Start with a short three-step dance. The order matters.",
+    starterBlocks: [
+      "when green flag clicked",
+      "move 20 steps",
+      "turn 15 degrees",
+      "say Dance time! for 2 seconds"
+    ],
+    activity: {
+      title: "Put the steps in order",
+      question: "Which step should happen first in a dance project?",
+      choices: [
+        "Start with the green flag block",
+        "Say Dance time!",
+        "Turn 15 degrees"
+      ],
+      answerIndex: 0,
+      success: "Right. Every sequence needs a clear start first.",
+      retry: "Not yet. Ask yourself which block tells the project when to begin."
+    },
     steps: [
       "Start with the green flag block.",
       "Add three or four action blocks in a row.",
@@ -56,7 +93,26 @@ const lessons = [
     learn: "Loops help us avoid repeating the same blocks many times by hand.",
     kidWords: "Loop means repeat.",
     project: "Make a character bounce or dance the same move several times.",
-    link: "https://scratch.mit.edu/",
+    link: "https://scratch.mit.edu/projects/editor/",
+    starterTip: "Put the movement blocks inside the repeat block so they happen again and again.",
+    starterBlocks: [
+      "when green flag clicked",
+      "repeat 6",
+      "move 20 steps",
+      "turn 15 degrees"
+    ],
+    activity: {
+      title: "Find the shortcut",
+      question: "Which block helps you do the same action many times without stacking lots of blocks?",
+      choices: [
+        "repeat",
+        "say",
+        "go to x: y:"
+      ],
+      answerIndex: 0,
+      success: "Yes. Repeat is the shortcut block.",
+      retry: "Try again. Think about which block means do it again."
+    },
     steps: [
       "Build a simple move and turn pattern.",
       "Wrap the pattern in a repeat block.",
@@ -79,7 +135,26 @@ const lessons = [
     learn: "The stage is like a map. Sprites can go to places using x and y positions.",
     kidWords: "Coordinates are places on the screen.",
     project: "Make a mini maze or path-following game.",
-    link: "https://scratch.mit.edu/",
+    link: "https://scratch.mit.edu/projects/editor/",
+    starterTip: "Pick a start place and an end place first before adding more movement.",
+    starterBlocks: [
+      "when green flag clicked",
+      "go to x: -150 y: 0",
+      "move 30 steps",
+      "turn 15 degrees"
+    ],
+    activity: {
+      title: "Choose the map block",
+      question: "Which block helps a sprite jump to a place on the stage map?",
+      choices: [
+        "go to x: y:",
+        "say Hello!",
+        "repeat 10"
+      ],
+      answerIndex: 0,
+      success: "Correct. That block sends the sprite to a place on the map.",
+      retry: "Not quite. Look for the block that names x and y."
+    },
     steps: [
       "Choose a background that looks like a path or map.",
       "Place your sprite at a start spot.",
@@ -102,7 +177,26 @@ const lessons = [
     learn: "An event can be a click, not just the green flag.",
     kidWords: "Event means something that starts the code.",
     project: "Make a clicker game where points come from clicking the sprite.",
-    link: "https://scratch.mit.edu/",
+    link: "https://scratch.mit.edu/projects/editor/",
+    starterTip: "This week, the sprite-clicked block is your start block instead of the green flag.",
+    starterBlocks: [
+      "when this sprite clicked",
+      "play sound pop",
+      "change costume",
+      "say Nice click! for 1 second"
+    ],
+    activity: {
+      title: "Choose the click start",
+      question: "Which block should be first if you want the action to happen when you tap the sprite?",
+      choices: [
+        "when this sprite clicked",
+        "when green flag clicked",
+        "move 10 steps"
+      ],
+      answerIndex: 0,
+      success: "Yes. That block listens for a click on the sprite.",
+      retry: "Try again. You want the start block that watches for a click."
+    },
     steps: [
       "Choose a fun sprite to click.",
       "Use the block for when this sprite clicked.",
@@ -125,7 +219,26 @@ const lessons = [
     learn: "Coding is not only logic. It also helps stories, characters, and feelings come alive.",
     kidWords: "A costume is how the sprite looks. Sound helps tell the story.",
     project: "Build a pet simulator starter where the pet reacts when clicked.",
-    link: "https://scratch.mit.edu/",
+    link: "https://scratch.mit.edu/projects/editor/",
+    starterTip: "Start with one happy reaction. Then add a second reaction if there is time.",
+    starterBlocks: [
+      "when this sprite clicked",
+      "switch costume to happy",
+      "play sound meow",
+      "say I am awake! for 2 seconds"
+    ],
+    activity: {
+      title: "Make it feel alive",
+      question: "Which choice would make a pet sprite feel more alive?",
+      choices: [
+        "Add a sound and costume change",
+        "Leave it still all the time",
+        "Delete all the blocks"
+      ],
+      answerIndex: 0,
+      success: "Yes. Sounds and costume changes give the sprite personality.",
+      retry: "Try again. Think about what makes a character react and feel alive."
+    },
     steps: [
       "Pick a pet sprite or any favorite character.",
       "Make it say something friendly.",
@@ -148,7 +261,26 @@ const lessons = [
     learn: "Real coders often improve something that already works.",
     kidWords: "Remix means change and improve something you already built.",
     project: "Pick your favorite earlier project and make it better.",
-    link: "https://scratch.mit.edu/",
+    link: "https://scratch.mit.edu/projects/editor/",
+    starterTip: "Start by copying the smallest working version of your favorite project idea.",
+    starterBlocks: [
+      "choose your favorite old starter",
+      "keep the main start block",
+      "add one new block",
+      "test after each tiny change"
+    ],
+    activity: {
+      title: "What is a remix?",
+      question: "Which choice is the best example of remixing?",
+      choices: [
+        "Take a project you made and add a new idea",
+        "Close Scratch and do nothing",
+        "Delete your project and never test it"
+      ],
+      answerIndex: 0,
+      success: "Exactly. Remixing means improving something you already have.",
+      retry: "Not yet. Think about changing and improving an existing project."
+    },
     steps: [
       "Choose one project from weeks 1 to 6.",
       "Decide one thing to add and one thing to improve.",
@@ -171,7 +303,26 @@ const lessons = [
     learn: "Big projects are really small ideas combined together.",
     kidWords: "Showcase means a project you are proud to show.",
     project: "Make a small final Phase 1 project like a pet game, dance story, or routine helper.",
-    link: "https://scratch.mit.edu/",
+    link: "https://scratch.mit.edu/projects/editor/",
+    starterTip: "Begin with the smallest version that works. Then add one sparkle at a time.",
+    starterBlocks: [
+      "choose a start block",
+      "add 2 or 3 main action blocks",
+      "test your simple version",
+      "add one extra fun touch"
+    ],
+    activity: {
+      title: "Plan the showcase",
+      question: "What is the smartest first step when making a bigger project?",
+      choices: [
+        "Make the simplest working version first",
+        "Try to build everything at once",
+        "Skip testing until the end"
+      ],
+      answerIndex: 0,
+      success: "Yes. Small first versions help projects stay calm and clear.",
+      retry: "Try again. Think about which choice helps a project stay easy to test."
+    },
     steps: [
       "Choose one idea you care about.",
       "Plan the beginning, middle, and ending.",
@@ -241,6 +392,7 @@ const projectList = document.querySelector("#project-list");
 const projectTemplate = document.querySelector("#project-card-template");
 const tabButtons = document.querySelectorAll(".tab-button");
 const completeButton = document.querySelector("#complete-button");
+const starterFocusButton = document.querySelector("#starter-focus-button");
 
 const lessonWeek = document.querySelector("#lesson-week");
 const lessonTitle = document.querySelector("#lesson-title");
@@ -256,6 +408,12 @@ const lessonChallenge = document.querySelector("#lesson-challenge");
 const lessonShare = document.querySelector("#lesson-share");
 const lessonDebug = document.querySelector("#lesson-debug");
 const lessonAdultNote = document.querySelector("#lesson-adult-note");
+const starterTip = document.querySelector("#starter-tip");
+const starterList = document.querySelector("#starter-list");
+const activityTitle = document.querySelector("#activity-title");
+const activityQuestion = document.querySelector("#activity-question");
+const activityChoices = document.querySelector("#activity-choices");
+const activityFeedback = document.querySelector("#activity-feedback");
 
 const progressSummary = document.querySelector("#progress-summary");
 const progressDetail = document.querySelector("#progress-detail");
@@ -323,12 +481,44 @@ function renderSelectedLesson() {
   lessonKidWords.textContent = lesson.kidWords;
   lessonProject.textContent = lesson.project;
   lessonLink.href = lesson.link;
+  lessonLink.textContent = `Open ${lesson.week} Scratch Starter`;
   lessonSteps.innerHTML = "";
+  starterList.innerHTML = "";
+  activityChoices.innerHTML = "";
+  activityFeedback.textContent = "";
+  activityFeedback.className = "activity-feedback";
+
   lesson.steps.forEach((step) => {
     const item = document.createElement("li");
     item.textContent = step;
     lessonSteps.appendChild(item);
   });
+
+  lesson.starterBlocks.forEach((block) => {
+    const item = document.createElement("li");
+    item.textContent = block;
+    starterList.appendChild(item);
+  });
+
+  starterTip.textContent = lesson.starterTip;
+  activityTitle.textContent = lesson.activity.title;
+  activityQuestion.textContent = lesson.activity.question;
+
+  lesson.activity.choices.forEach((choice, index) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "choice-button";
+    button.textContent = choice;
+    button.addEventListener("click", () => {
+      const correct = index === lesson.activity.answerIndex;
+      activityFeedback.textContent = correct ? lesson.activity.success : lesson.activity.retry;
+      activityFeedback.className = correct
+        ? "activity-feedback success"
+        : "activity-feedback retry";
+    });
+    activityChoices.appendChild(button);
+  });
+
   lessonChallenge.textContent = lesson.challenge;
   lessonShare.textContent = lesson.share;
   lessonDebug.textContent = lesson.debug;
@@ -369,6 +559,10 @@ completeButton.addEventListener("click", () => {
   renderLessonList();
   renderSelectedLesson();
   renderProgress();
+});
+
+starterFocusButton.addEventListener("click", () => {
+  starterList.scrollIntoView({ behavior: "smooth", block: "center" });
 });
 
 tabButtons.forEach((button) => {
