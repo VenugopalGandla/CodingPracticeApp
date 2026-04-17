@@ -49,7 +49,7 @@
 
             <ul class="hero-stats" aria-label="Program facts">
               <li><strong>8 starter weeks</strong><span>ready right now</span></li>
-              <li><strong>Mini activities</strong><span>inside every lesson</span></li>
+              <li><strong>Mini games</strong><span>inside every lesson</span></li>
               <li><strong>Saved progress</strong><span>right in this browser</span></li>
             </ul>
           </section>
@@ -168,10 +168,19 @@
                 </section>
 
                 <section class="content-card activity-card">
-                  <h4>Mini Activity</h4>
+                  <h4>Mini Game</h4>
                   <p class="activity-lead" id="activity-title"></p>
                   <p id="activity-question"></p>
+                  <div class="activity-playground" id="activity-playground"></div>
                   <div class="choice-list" id="activity-choices"></div>
+                  <div class="activity-actions">
+                    <button class="button button-inline ghost-button" id="activity-reset-button" type="button">
+                      Reset Mini Game
+                    </button>
+                    <button class="button button-inline" id="activity-check-button" type="button">
+                      Check My Answer
+                    </button>
+                  </div>
                   <p class="activity-feedback" id="activity-feedback" aria-live="polite"></p>
                 </section>
 
